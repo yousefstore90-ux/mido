@@ -39,8 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         PSFree: A PS4/PS5 Exploit Chain
         <br>
         <br>
-         See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
-         source code and license.<br>
+ 
 
         <pre id='console'></pre>
     </body>
@@ -59,17 +58,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         #console {
             font-family: 'logging';
         }
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('log.o.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
 
-        body {
-            margin: 0;
-            height: 100vh;
-            background: url('logo.png') no-repeat center center;
-            background-size: cover;
-            background-attachment: fixed;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
+    /* هنا اللون اللي هيظهر تحت الصورة */
+    background-color: #000000; /* أسود */
+}
 
         /* تأثير وميض نجوم صغيرة */
         .stars {
@@ -112,19 +113,26 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             to { transform: rotate(360deg); }
         }
 
-        /* ====== البار السفلي (التليفون + العنوان) ====== */
-        .footer {
+        /* ====== النص في النص ====== */
+        .center-text {
             position: absolute;
-            bottom: 70px;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             text-align: center;
-            font-size: 30px;
+            text-shadow: 0 0 15px cyan, 0 0 30px blue;
+        }
+
+        .center-text h1 {
+            font-size: 70px;
             font-weight: bold;
-            text-shadow: 0 0 10px rgb(13, 252, 252), 0 0 20px blue;
-            background: rgba(49, 179, 179, 0.61);
-            padding: 10px 20px;
-            border-radius: 12px;
+            margin: 0;
+        }
+
+        .center-text p {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 10px 0 0 0;
         }
     </style>
     <script>
@@ -143,12 +151,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <div class="star" style="top:50%; left:10%;"></div>
     </div>
 
-    <pre id='console'></pre>
-
-    <!-- البار السفلي -->
-    <div class="footer">
-         01555371568 📱<br>
-         شارع المحطة - منوف - المنوفية 📍 
+    <!-- النص في النص -->
+    <div class="center-text">
+        <h1>YOUSEF STORE</h1>
+        <p>📱 01555371568</p>
+        <p>📍 شارع المحطة - منوف - المنوفية</p>
     </div>
 
     <script type='module' src='./alert.mjs'></script>
