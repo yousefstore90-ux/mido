@@ -1,0 +1,156 @@
+<!-- Copyright (C) 2023-2025 anonymous
+
+This file is part of PSFree.
+
+PSFree is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+PSFree is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>PSFree-Lapse Exploit For PS4 9.00</title>
+        <style>
+            @font-face {
+                font-family: 'logging';
+                src: url('fonts/LiberationMono-Regular.ttf');
+            }
+            #console {
+                font-family: 'logging';
+            }
+        </style>
+        <script>
+        if (window.applicationCache.status=='0')
+        {
+          window.location.replace("cache.html");
+        }
+        </script>
+    </head>
+    <body>
+        PSFree: A PS4/PS5 Exploit Chain
+        <br>
+        <br>
+         See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
+         source code and license.<br>
+
+        <pre id='console'></pre>
+    </body>
+    <script type='module' src='./alert.mjs'></script>
+</html>
+<!DOCTYPE html>
+<html manifest="PSFree.manifest">
+<head>
+    <meta charset='utf-8'>
+    <title>YOUSEF STORE</title>
+    <style>
+        @font-face {
+            font-family: 'logging';
+            src: url('fonts/LiberationMono-Regular.ttf');
+        }
+        #console {
+            font-family: 'logging';
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url('logo.png') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* تأثير وميض نجوم صغيرة */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: twinkle 2s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from { opacity: 0.2; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1.4); }
+        }
+
+        /* لمعة متحركة */
+        .glow {
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, transparent 70%);
+            animation: moveGlow 10s linear infinite;
+        }
+
+        @keyframes moveGlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* ====== البار السفلي (التليفون + العنوان) ====== */
+        .footer {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgb(13, 252, 252), 0 0 20px blue;
+            background: rgba(49, 179, 179, 0.61);
+            padding: 10px 20px;
+            border-radius: 12px;
+        }
+    </style>
+    <script>
+        if (window.applicationCache.status=='0') {
+            window.location.replace("cache.html");
+        }
+    </script>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="stars">
+        <div class="star" style="top:10%; left:20%;"></div>
+        <div class="star" style="top:30%; left:70%;"></div>
+        <div class="star" style="top:60%; left:40%;"></div>
+        <div class="star" style="top:80%; left:90%;"></div>
+        <div class="star" style="top:50%; left:10%;"></div>
+    </div>
+
+    <pre id='console'></pre>
+
+    <!-- البار السفلي -->
+    <div class="footer">
+         01555371568 📱<br>
+         شارع المحطة - منوف - المنوفية 📍 
+    </div>
+
+    <script type='module' src='./alert.mjs'></script>
+</body>
+</html>
